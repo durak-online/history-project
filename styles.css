@@ -108,6 +108,7 @@ body {
 .section {
     margin-bottom: 4rem;
     scroll-margin-top: 90px;
+    position: relative;
 }
 
 .section-title {
@@ -376,10 +377,6 @@ body {
     box-shadow: 0 0 6px rgba(230,57,70,0.5);
 }
 
-.section {
-    position: relative;
-}
-
 .section-marker {
     position: absolute;
     right: 20px;
@@ -422,26 +419,57 @@ body {
     .container {
         padding: 1.5rem;
     }
+
     .hero h1 {
         font-size: 2rem;
     }
-    .section-title {
-        font-size: 1.6rem;
+
+    .section {
+        position: relative;
+        margin-top: 3rem;
     }
+
+    .section-marker {
+        position: static;
+        justify-content: flex-end;
+        margin-bottom: 0.5rem;
+        gap: 6px;
+    }
+
+    .marker-year {
+        font-size: 0.8rem;
+    }
+
+    .marker-dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .section-title {
+        margin-top: 0.5rem;
+        clear: both;
+        font-size: 1.5rem;
+    }
+
     .nav-links {
         gap: 1rem;
     }
 
-    .timeline { display: none; }
+    .nav-links a {
+        font-size: 0.8rem;
+    }
 
-    .section {
-        padding-left: 20px;
+    .logo {
+        font-size: 1.25rem;
     }
-    .section-marker {
-        left: 0;
-        width: 20px;
+
+    .myth-card h3,
+    .reality-card h3 {
+        font-size: 1.2rem;
     }
-    .marker-year {
-        display: none;
+
+    .myth-card p,
+    .reality-card p {
+        font-size: 0.9rem;
     }
 }
